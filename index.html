@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pecel Lele & Ayam Penyet Bang Fadla</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>Pecel Lele & Ayam Penyet Bang Fadla</h1>
+  <p>Jl. M Yusuf 1 No 14A, Sukmajaya, Depok</p>
+
+  <div class="btn-group">
+    <a class="btn maps" target="_blank" href="https://maps.google.com/?q=Jl.+M+Yusuf+1+No+14A+Depok">📍 Maps</a>
+    <a class="btn wa" target="_blank" href="https://wa.me/6281212410394">💬 WhatsApp</a>
+    <a class="btn gofood" target="_blank" href="https://gofood.link/a/DdWhJrs">🍔 GoFood</a>
+    <a class="btn grabfood" target="_blank" href="https://r.grab.com/g/6-20260206_113019_223a31b21fc94d04a6330ea591babbbb_MEXMPS-6-C3BTHAWDR4CWGT">🍽 GrabFood</a>
+  </div>
+</header>
+
+<nav class="tabs">
+  <button class="tab active" onclick="showTab('utama',this)">🍗 Menu Utama</button>
+  <button class="tab" onclick="showTab('tambahan',this)">➕ Menu Tambahan</button>
+  <button class="tab" onclick="showTab('minuman',this)">🥤 Minuman</button>
+  <button class="tab" onclick="showTab('cart',this)">🛒 Keranjang</button>
+</nav>
+
+<main class="container">
+
+<section id="tab-utama">
+  <div id="menu-utama" class="grid"></div>
+</section>
+
+<section id="tab-tambahan" class="hidden">
+  <div id="menu-tambahan" class="grid"></div>
+</section>
+
+<section id="tab-minuman" class="hidden">
+  <div id="menu-minuman" class="grid"></div>
+</section>
+
+<section id="tab-cart" class="hidden cart">
+  <ul id="cart-list"></ul>
+  <p class="total">Total: <span id="total">Rp 0</span></p>
+  <div class="cart-actions">
+    <button class="clear" onclick="clearCart()">Hapus Semua</button>
+    <button onclick="checkout()">Pesan via WhatsApp</button>
+  </div>
+</section>
+
+<section class="maps-section">
+  <h2>📍 Lokasi Kami</h2>
+  <iframe
+    src="https://www.google.com/maps?q=Jl.+M+Yusuf+1+No+14A+Depok&output=embed"
+    loading="lazy">
+  </iframe>
+</section>
+
+</main>
+
+<footer>© 2026 Pecel Lele & Ayam Penyet Bang Fadla</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
